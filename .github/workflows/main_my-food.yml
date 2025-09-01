@@ -26,7 +26,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build --configuration production
+          npm run build -- --configuration production
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -60,7 +60,8 @@ jobs:
         with:
           app-name: 'my-food'
           slot-name: 'Production'
-          package: .
+          package: dist/my-food
 
           
+
 
