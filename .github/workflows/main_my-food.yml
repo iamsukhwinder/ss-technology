@@ -60,9 +60,10 @@ jobs:
         with:
           app-name: 'my-food'
           slot-name: 'Production'
-          package: .
+          package: dist/my-food
 
           
+
 
 
 
